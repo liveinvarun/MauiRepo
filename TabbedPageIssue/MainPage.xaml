@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabbedPageIssue.MainPage" Title="MainPage">
+    <ContentPage.Resources>
+        <Style x:Key="locationStyle" TargetType="Label">
+            <Setter Property="FontSize"
+                    Value="20"/>
+            <Setter Property="HorizontalOptions"
+                    Value="Center"/>
+
+        </Style>
+
+    </ContentPage.Resources>
+    <CollectionView ItemsSource="{Binding MonkeyCollection}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <HorizontalStackLayout Spacing="25"
+                                     Padding="30,0"
+                                     VerticalOptions="Center">
+                    <Label Text="{Binding Name}"
+                            SemanticProperties.HeadingLevel="Level1"
+                            FontSize="32"
+                            HorizontalOptions="Center" />
+
+                    <Label Text="{Binding Location}">  
+                          Style="{StaticResource locationStyle}" >
+                        </Label>
+
+                </HorizontalStackLayout>
+
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+        
+    </CollectionView>
+
+</ContentPage>
+
