@@ -8,22 +8,52 @@
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-          <Label 
+        <Label 
             Text="Hello to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-          <Label 
+        <Label 
             Text="Please solve the issue of white space in android Tabpage navigation"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-          <Label 
+        <Entry Text="Check MAUI Test"
+                Margin="18,5"/>
+        <Editor Text="second test"
+                Margin="18,5"/>
+          <Entry Text="third test"
+                Margin="18,5"/>
+        <Editor Text="fourth test"
+                Margin="18,5"/>
+          <Entry Text="fifthTest"
+                Margin="18,5"/>
+        <Editor Text="sixth test"
+                Margin="18,5"/>
+          <Entry Text="seventh MAUI Test"
+                Margin="18,5"/>
+        <Editor Text="ui test"
+                Margin="18,5"/>
+          <Entry Text="Check MAUI Test"
+                Margin="18,5"/>
+        <Editor Text="hello test"
+                Margin="18,5"/>
+        <Picker >
+            <Picker.Items>
+                <x:String>Norway</x:String>
+                <x:String>Belgium</x:String>
+                <x:String>US</x:String>
+                <x:String>UK</x:String>
+                <x:String>Wales</x:String>
+                <x:String>France</x:String>
+                <x:String>Germany</x:String>
+            </Picker.Items>
+        </Picker>
+        <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-          <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="Submit" HeightRequest="64" BorderWidth="1" />
+            <Button Text="Cancel" HeightRequest="64" BorderWidth="1" />
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

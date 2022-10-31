@@ -11,8 +11,9 @@ public partial class Page3 : ContentPage
 
     private void OnCounterClicked(object sender, EventArgs e)
     {
-
+        App.NavigationService.PushModalAsync(new DummyPage());
     }
+
 }
 
 
