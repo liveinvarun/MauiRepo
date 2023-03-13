@@ -14,6 +14,6 @@ public partial class DummyPage : ContentPage
     {
         base.OnAppearing();
 
-        this.InvalidateMeasure();
+       
     }
 }
