@@ -4,14 +4,14 @@ using CommunityToolkit.Mvvm.ComponentModel;
 namespace TabbedPageIssue.ViewModels
 {
     [INotifyPropertyChanged]
-    public partial class DummyPageViewModel
+    public partial class MainPageViewModel
     {
-        public DummyPageViewModel()
+        public MainPageViewModel()
         {
             MonkeyCollection = new ObservableCollection<Monkey>();
             for (int i = 0; i < 100; i++)
             {
-                MonkeyCollection.Add(new Monkey { Name = "Dummy" + i, Location = "location" + "98" + i });
+                MonkeyCollection.Add(new Monkey { Name = "Monkey" + i, Location = "location" + "8" + i });
             }
 
 

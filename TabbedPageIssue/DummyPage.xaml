@@ -3,7 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TabbedPageIssue.DummyPage"
              Title="DummyPage" BackgroundColor="Green">
-    <VerticalStackLayout>
+      <CollectionView ItemsSource="{Binding MonkeyCollection}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout HeightRequest="100">
+                        <Entry Text="{Binding Location}" Placeholder="Please enter something here"/>
+
+                    
+                    <HorizontalStackLayout Spacing="25"
+                                     Padding="30,0"
+                                     VerticalOptions="Center">
+                        <Label Text="{Binding Name}"
+                            SemanticProperties.HeadingLevel="Level1"
+                            FontSize="32"
+                            HorizontalOptions="Center" />
+
+                        <Label Text="{Binding Location}">
+                            Style="{StaticResource locationStyle}" >
+                        </Label>
+
+                    </HorizontalStackLayout>
+                         </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+         
+    <!--<VerticalStackLayout>
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
@@ -55,5 +81,5 @@
             <Button Text="Submit" HeightRequest="64" BorderWidth="1" />
             <Button Text="Cancel" HeightRequest="64" BorderWidth="1" />
         </HorizontalStackLayout>
-    </VerticalStackLayout>
+    </VerticalStackLayout>-->
 </ContentPage>

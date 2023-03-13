@@ -16,6 +16,10 @@ public partial class MainPage : ContentPage
         App.NavigationService.PushAsync(new DummyPage());
     }
 
+    private void OnDummyClicked(object sender, EventArgs e)
+    {
+        App.NavigationService.PushModalAsync(new DummyPage());
+    }
 
 
 }

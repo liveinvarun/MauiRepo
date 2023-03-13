@@ -12,27 +12,30 @@
         </Style>
 
     </ContentPage.Resources>
-    <CollectionView ItemsSource="{Binding MonkeyCollection}">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <HorizontalStackLayout Spacing="25"
+    <StackLayout>
+        <Button HeightRequest="80" Margin="20,0" Text="TestPageIssue"
+                Clicked="OnDummyClicked"/>  
+        <CollectionView ItemsSource="{Binding MonkeyCollection}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <HorizontalStackLayout Spacing="25"
                                      Padding="30,0"
                                      VerticalOptions="Center">
-                    <Label Text="{Binding Name}"
+                        <Label Text="{Binding Name}"
                             SemanticProperties.HeadingLevel="Level1"
                             FontSize="32"
                             HorizontalOptions="Center" />
 
-                    <Label Text="{Binding Location}">  
-                          Style="{StaticResource locationStyle}" >
+                        <Label Text="{Binding Location}">
+                            Style="{StaticResource locationStyle}" >
                         </Label>
 
-                </HorizontalStackLayout>
+                    </HorizontalStackLayout>
 
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-        
-    </CollectionView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
 
+        </CollectionView>
+    </StackLayout>
 </ContentPage>
 
