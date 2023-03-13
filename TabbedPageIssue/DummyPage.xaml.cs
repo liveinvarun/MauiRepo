@@ -13,6 +13,7 @@ public partial class DummyPage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
+
         this.InvalidateMeasure();
     }
 }
