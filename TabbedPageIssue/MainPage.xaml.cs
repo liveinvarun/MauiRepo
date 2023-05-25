@@ -20,7 +20,15 @@ public partial class MainPage : ContentPage
     {
         App.NavigationService.PushModalAsync(new DummyPage());
     }
+ protected override void OnAppearing()
+    {
+        base.OnAppearing();
+    }
 
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
+    }
 
 }
 
