@@ -8,7 +8,7 @@ public partial class App : Application
 
         MainPage = new NavigationPage();
         App.NavigationService = MainPage.Navigation;
-        App.NavigationService.PushAsync(new HomePage());
+        App.NavigationService.PushAsync(new MainPage());
     }
 
     public static INavigation NavigationService { get; private set; }
