@@ -34,7 +34,13 @@
 
                 </DataTemplate>
             </CollectionView.ItemTemplate>
+ <CollectionView.Header>
+          
+            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+                    <Entry Placeholder="Enter the searchText"/>
 
+                </StackLayout>
+        </CollectionView.Header>
         </CollectionView>
     </StackLayout>
 </ContentPage>
